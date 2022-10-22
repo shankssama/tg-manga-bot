@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from plugins.client import MangaClient, MangaCard, MangaChapter, LastChapter
 
 
-class AsuraScansClient(MangaClient):
+class OmegascansClient(MangaClient):
 
     base_url = urlparse("https://omegascans.org")
     search_url = base_url.geturl()

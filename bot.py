@@ -15,7 +15,7 @@ from img2pdf.core import fld2pdf
 from img2tph.core import img2tph
 from plugins import MangaClient, ManhuaKoClient, MangaCard, MangaChapter, ManhuaPlusClient, TMOClient, MangaDexClient, \
     MangaSeeClient, MangasInClient, McReaderClient, MangaKakalotClient, ManganeloClient, ManganatoClient, \
-    KissMangaClient, MangatigreClient, MangaHasuClient, MangaBuddyClient, AsuraScansClient
+    KissMangaClient, MangatigreClient, MangaHasuClient, MangaBuddyClient, AsuraScansClient, OmegascansClient
 import os
 
 from pyrogram import Client, filters
@@ -50,6 +50,7 @@ plugin_dicts: Dict[str, Dict[str, MangaClient]] = {
         "MangaHasu": MangaHasuClient(),
         "MangaBuddy": MangaBuddyClient(),
         "AsuraScans": AsuraScansClient(),
+        "OmegaScans": OmegascansClient(),
     },
     "🇪🇸 ES": {
         "MangaDex": MangaDexClient(language=("es-la", "es")),
@@ -156,7 +157,7 @@ async def on_start(client: Client, message: Message):
                         "For example:\n"
                         "`Fire Force`\n"
                         "\n"
-                        "Check /help for more information.")
+                        "Check /help for more information.Updates:@Wizard_Bots"
 
 
 @bot.on_message(filters=filters.command(['help']))

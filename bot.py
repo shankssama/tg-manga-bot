@@ -157,7 +157,7 @@ async def on_start(client: Client, message: Message):
                         "For example:\n"
                         "`Fire Force`\n"
                         "\n"
-                        "Check /help for more information.Updates:@Wizard_Bots"
+                        "Check /help for more information.Updates:@Wizard_Bots."
 
 
 @bot.on_message(filters=filters.command(['help']))
